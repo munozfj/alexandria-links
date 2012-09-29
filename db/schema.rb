@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120929181041) do
+ActiveRecord::Schema.define(:version => 20120929205358) do
 
   create_table "articles", :force => true do |t|
     t.string   "subject"
@@ -19,6 +19,19 @@ ActiveRecord::Schema.define(:version => 20120929181041) do
     t.datetime "published_at"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "books", :force => true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.text     "description"
+    t.decimal  "price",            :precision => 8, :scale => 2
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
+    t.string   "pic_file_name"
+    t.string   "pic_content_type"
+    t.integer  "pic_file_size"
+    t.datetime "pic_updated_at"
   end
 
 end

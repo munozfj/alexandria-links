@@ -1,7 +1,9 @@
 AlexandriaLinks::Application.routes.draw do
+  resources :books
+
   resources :articles
 
-  root :to => 'articles#index'
+  root :to => 'books#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
