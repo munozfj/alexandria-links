@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Molle:400italic);
+
+.navbar .brand {
+  font-family: 'Molle', cursive;
+  font-size: 38px;
+
+}
+.navbar .brand:hover {
+  text-decoration: none;
+  color: green;
+}
+
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+}
+
+footer a {
+  color: #555;
+}  
+
+footer a:hover { 
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
