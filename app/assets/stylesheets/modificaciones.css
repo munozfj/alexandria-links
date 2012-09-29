@@ -7,10 +7,21 @@
 }
 .navbar .brand:hover {
   text-decoration: none;
-  color: green;
+  color: #0064cd;
 }
 
-
+/* Background */
+body
+{
+background: #fefbea; /* Old browsers */
+background: -moz-linear-gradient(left, #fefbea 0%, #f5d131 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fefbea), color-stop(100%,#f5d131)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #fefbea 0%,#f5d131 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #fefbea 0%,#f5d131 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #fefbea 0%,#f5d131 100%); /* IE10+ */
+background: linear-gradient(to right, #fefbea 0%,#f5d131 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefbea', endColorstr='#f5d131',GradientType=1 ); /* IE6-9 */
+}
 
 /* footer */
 
@@ -25,7 +36,7 @@ footer a {
 }  
 
 footer a:hover { 
-  color: #222;
+  color: #0064cd;
 }
 
 footer small {
