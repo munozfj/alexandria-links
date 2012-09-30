@@ -31,14 +31,28 @@ class Book < ActiveRecord::Base
     :url  => ":s3_url" 
 
   
+  #Validaciones
+  validates :title, presence: true, 
+                    length: { maximum: 200 },
+                    uniqueness: { case_sensitive: false }
+
+  validates :author, presence: true
+
+  validates :description, presence: true
+
+  validates :price, presence: true,
+                    numericality: { greater_than_or_equal_to: 0.01 }
+
+  validates :pic, presence: true
+
 
   def self.search(search)
     if search
       find(:all, 
             :conditions => ['lower(title) like lower(?) or lower(author) like lower(?) or lower(description) like lower(?) ', "%#{search}%" , "%#{search}%" , "%#{search}%"],
-          :order => "title asc, author asc" )
+          :order => "lower(title) asc, author asc" )
     else
-      find(:all,:order => "title asc, author asc")
+      find(:all,:order => "lower(title) asc, author asc")
     end
   end
 

@@ -11,6 +11,9 @@
   </div>
 <% end %>
 
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_book_path,
+            :class => 'btn btn-mini btn-primary' %>
 
 <table class="table table-striped">
   <thead>
@@ -46,6 +49,6 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_book_path,
-            :class => 'btn btn-primary' %>
+
+
+
