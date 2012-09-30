@@ -1,0 +1,17 @@
+<h1>Our Exclusive Catalog</h1>
+
+<div id="store">
+  <% @books.each do |book| %>
+    <div class="entry">
+      <%= image_tag book.pic.url(:thumb) %>
+      <h4><%= book.title %></h4>
+     
+      <%= sanitize (truncate(strip_tags(book.description),
+                    :length => 300) ) %>
+      <div class="price_line">
+        <span class="price"><%=number_to_currency(book.price)%></span>
+      </div>
+    </div>
+  <% end %>
+</div>
+
