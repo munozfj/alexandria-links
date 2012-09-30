@@ -74,3 +74,11 @@ footer ul li {
   margin-left: 10px;
 }
 
+/* Modales */
+#modal_alex h3
+{
+  font-family: 'Molle-Regular';
+  font-size: 25px;
+  color: #0064cd;
+} 
+
