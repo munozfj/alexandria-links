@@ -12,10 +12,11 @@
   <dd><%= @book.description %></dd>
   <dt><strong><%= model_class.human_attribute_name(:price) %>:</strong></dt>
   <dd><%= @book.price %></dd>
-<%= image_tag @book.pic.url(:medium) %>
- <br/>
- <%= image_tag @book.pic.url(:thumb) %>
- <br/>
+
+  <dt><strong><%= model_class.human_attribute_name(:pic) %>:</strong></dt>
+  <dd><%= image_tag @book.pic.url(:medium) %></dd>
+   <br/>
+
 </dl>
 
 <div class="form-actions">

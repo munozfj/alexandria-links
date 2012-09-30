@@ -29,4 +29,16 @@ class Book < ActiveRecord::Base
                        },
     :path => "/:style/:id/:filename",
     :url  => ":s3_url" 
+
+  
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['title LIKE ? or author like ? or description like ? ', "%#{search}%" , "%#{search}%" , "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
+
 end
