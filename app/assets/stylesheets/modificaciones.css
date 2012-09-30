@@ -1,7 +1,26 @@
-@import url(http://fonts.googleapis.com/css?family=Molle:400italic);
+/*
+Agradecimiento por la fuente
+
+Copyright (c) 2012 by Sorkin Type Co (www.sorkintype.com),
+with Reserved Font Name "Molle".
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+				font-family: 'Molle-Regular';
+				src: url('./Molle-Regular/molle-regular.eot');
+				src: url('./Molle-Regular/molle-regular.eot?#iefix') format('embedded-opentype'),
+						 url('./Molle-Regular/molle-regular.woff') format('woff'),
+						 url('./Molle-Regular/molle-regular.ttf') format('truetype'),
+						 url('./Molle-Regular/molle-regular.svg#molle-regular') format('svg');
+				font-weight: normal;
+				font-style: normal;
+		}
 
 .navbar .brand {
-  font-family: 'Molle', cursive;
+  font-family: 'Molle-Regular';
   font-size: 38px;
 
 }
@@ -13,14 +32,16 @@
 /* Background */
 body
 {
-background: #fefbea; /* Old browsers */
-background: -moz-linear-gradient(left, #fefbea 0%, #f5d131 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fefbea), color-stop(100%,#f5d131)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, #fefbea 0%,#f5d131 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, #fefbea 0%,#f5d131 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, #fefbea 0%,#f5d131 100%); /* IE10+ */
-background: linear-gradient(to right, #fefbea 0%,#f5d131 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefbea', endColorstr='#f5d131',GradientType=1 ); /* IE6-9 */
+
+background: #ffd65e; /* Old browsers */
+background: -moz-linear-gradient(left, #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #ffd65e 0%,#febf04 100%); /* IE10+ */
+background: linear-gradient(to right, #ffd65e 0%,#febf04 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 */
+
 }
 
 /* footer */
