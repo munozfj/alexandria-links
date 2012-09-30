@@ -61,7 +61,7 @@ module AlexandriaLinks
 
     ##FJM
     # Allow compilation of assests on Heroku
-    config.assets.initialize_on_precompile = false
+    #config.assets.initialize_on_precompile = false
 
   end
 end
