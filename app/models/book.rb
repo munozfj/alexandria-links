@@ -35,7 +35,7 @@ class Book < ActiveRecord::Base
   def self.search(search)
     if search
       find(:all, 
-            :conditions => ['title LIKE ? or author like ? or description like ? ', "%#{search}%" , "%#{search}%" , "%#{search}%"],
+            :conditions => ['lower(title) like lower(?) or lower(author) like lower(?) or lower(description) like lower(?) ', "%#{search}%" , "%#{search}%" , "%#{search}%"],
           :order => "title asc, author asc" )
     else
       find(:all,:order => "title asc, author asc")
