@@ -5,9 +5,10 @@
     <title><%= content_for?(:title) ? yield(:title) : "Alexandria Links" %></title>
 
     <%= csrf_meta_tags %>
-    <%= render 'layouts/meta' %>
-    <%= render 'layouts/shim' %>
+    <%= render 'layouts/meta'  %>
+    <%= render 'layouts/shim'  %>
     <%= render 'layouts/icons' %>
+    <%= render 'layouts/fonts' %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
   </head>
