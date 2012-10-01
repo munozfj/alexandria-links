@@ -30,6 +30,10 @@ class Book < ActiveRecord::Base
     :path => "/:style/:id/:filename",
     :url  => ":s3_url" 
 
+  has_many :line_items
+
+  before_destroy :ensure_not_referenced_by_any_line_item
+
   
   #Validaciones
   validates :title, presence: true, 
@@ -55,6 +59,18 @@ class Book < ActiveRecord::Base
       find(:all,:order => "lower(title) asc, author asc")
     end
   end
+
+  private
+
+    # ensure that there are no line items referencing this product
+    def ensure_not_referenced_by_any_line_item
+      if line_items.empty?
+        return true
+      else
+        errors.add(:base, 'Line Items present')
+        return false
+      end
+    end
 
 
 end
