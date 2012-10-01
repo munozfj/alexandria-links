@@ -75,7 +75,7 @@ footer ul li {
 }
 
 /* Modales */
-#modal_alex h3
+#modal_alex h3, #modal_acknowledgments h3
 {
   font-family: 'Molle-Regular';
   font-size: 25px;
@@ -88,12 +88,14 @@ footer ul li {
   overflow: auto;
   margin-top: 1em;
   border-bottom: 1px dotted #77d;
+  text-align: justify;
 }
 
 #store  .title {
   font-size: 120%;
   font-family: sans-serif;
 }
+
 
 #store .entry img {
   width: 80px;
@@ -133,6 +135,17 @@ footer ul li {
 display: inline;
 }
 
+/* Styles for the Cart in the main page */
+#cart .cart_title {
+font: 120% bold;
+}
+#cart .item_price, #store .total_line {
+text-align: right;
+}
+#cart .total_line .total_cell {
+font-weight: bold;
+border-top: 1px solid #595;
+}
 
 
 

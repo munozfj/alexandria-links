@@ -10,8 +10,7 @@
                     :length => 300) ) %>
       <div class="price_line">
         <span class="price"><%=number_to_currency(book.price)%></span>
-        <%= button_to 'Add to Cart', line_items_path(book_id: book), :class => "btn btn-mini btn-success" %>
-
+        <%= link_to raw("<i class=\"icon-shopping-cart\"></i>"), line_items_path(book_id: book), :class => "btn btn-small btn-success", method: :post %>
       </div>
     </div>
   <% end %>
