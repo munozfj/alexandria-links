@@ -35,7 +35,7 @@ GEM
       builder
       mime-types
       xml-simple
-    aws-sdk (1.6.6)
+    aws-sdk (1.6.8)
       httparty (~> 0.7)
       json (~> 1.4)
       nokogiri (>= 1.4.4)

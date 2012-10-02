@@ -148,4 +148,24 @@ border-top: 1px solid #595;
 }
 
 
+/* Styles for the cart in the sidebar */
+#cart
+{
+  padding-bottom: 10px;
+}
+#cart, #cart table {
+font-size: small;
+color: black;
+}
+
+#cart table {
+border-top:
+1px dotted #595;
+border-bottom: 1px dotted #595;
+margin-bottom: 10px;
+}
+
+
+
+
 

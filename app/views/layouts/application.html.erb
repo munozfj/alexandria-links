@@ -24,7 +24,14 @@
         </div>
 
         <div class="span3">
+
+          <%= hidden_div_if(@cart.line_items.empty?, id: 'cart', class:'well sidebar-nav' ) do %>
+            <%= render @cart %>
+          <% end %>
+
           <%= render 'layouts/sidebar' %>
+          
+
         </div>
 
       </div>
