@@ -10,8 +10,12 @@
 
 </table>
 
+
+
 <%= link_to raw("<i class=\"icon-trash\"></i>"), cart, class: "btn btn-small btn-danger", method: :delete,
     data: { confirm: 'Are you sure?' } %>
+
+<%= link_to raw("<i class=\"icon-ok\"></i>"), new_order_url, class: "btn btn-small btn-primary", method: :get %>
 
     
 

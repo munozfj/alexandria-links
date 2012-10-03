@@ -81,4 +81,15 @@ class BooksController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  #Who_bought
+  def who_bought
+    @book = Book.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.atom
+      format.xml { render :xml => @book }
+    end
+end
+
 end

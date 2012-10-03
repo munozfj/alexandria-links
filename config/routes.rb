@@ -1,4 +1,6 @@
 AlexandriaLinks::Application.routes.draw do
+  resources :orders
+
   resources :line_items
 
   resources :carts
@@ -8,6 +10,11 @@ AlexandriaLinks::Application.routes.draw do
   resources :books
 
   resources :articles
+
+  resources :books do
+    get :who_bought, :on => :member
+  end
+
 
   root :to => 'store#index', :as => 'store'
   # The priority is based upon order of creation:

@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'aws-s3'
+gem 'will_paginate' 
 
 #Ambientes de Desarrollo y Test
 group :development, :test do

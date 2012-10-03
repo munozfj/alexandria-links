@@ -25,8 +25,10 @@
 
         <div class="span3">
 
-          <%= hidden_div_if(@cart.line_items.empty?, id: 'cart', class:'well sidebar-nav' ) do %>
-            <%= render @cart %>
+          <% if @cart %>
+            <%= hidden_div_if(@cart.line_items.empty?, id: 'cart', class:'well sidebar-nav') do %>
+              <%= render @cart %>
+            <% end %>
           <% end %>
 
           <%= render 'layouts/sidebar' %>
