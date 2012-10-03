@@ -10,7 +10,13 @@ favicon-144x144-precomposed.png: favicon-144x144-precomposed-781d6156eae481cb9e2
 favicon-72x72-precomposed.png: favicon-72x72-precomposed-781d6156eae481cb9e23b3bf5d2fccdb.png
 favicon1.png: favicon1-781d6156eae481cb9e23b3bf5d2fccdb.png
 application.js: application-dad4ebaecc48abf58d8853795b1da1b4.js
-application.css: application-f83b780ab719b4e90ad42c99eb4dd4eb.css
+AlexBrush-Regular/OFL.txt: AlexBrush-Regular/OFL-08f9bba9b95bfb9efe3b17fc4babf09c.txt
+AlexBrush-Regular/alexbrush-regular.eot: AlexBrush-Regular/alexbrush-regular-2c870256a145e36c40947694c1302be7.eot
+AlexBrush-Regular/alexbrush-regular.html: AlexBrush-Regular/alexbrush-regular-d98e749afef209251c499f5142a420b8.html
+AlexBrush-Regular/alexbrush-regular.svg: AlexBrush-Regular/alexbrush-regular-de8f263ffce65a9169af8dfe0371f7fd.svg
+AlexBrush-Regular/alexbrush-regular.ttf: AlexBrush-Regular/alexbrush-regular-fa6e88380b52bfde96a446d73de0b594.ttf
+AlexBrush-Regular/alexbrush-regular.woff: AlexBrush-Regular/alexbrush-regular-149656666d6c71185e00c8fdca1f6d18.woff
+application.css: application-8cbcdbea11a234c7a801d693b2b38da5.css
 bootstrap_and_overrides.old: bootstrap_and_overrides-d12231f4111b493b9fde4c05dd7fd3dd.old
 modificaciones.old: modificaciones-8f79b841482b219b08ea8248887d2f45.old
 fontawesome-webfont.eot: fontawesome-webfont-7cf1b0de49e2f8672c9ad6d9e382115f.eot

@@ -1,12 +1,24 @@
 /*   
-Agradecimiento por la fuente
+Agradecimiento por la fuente Molle
 
 Copyright (c) 2012 by Sorkin Type Co (www.sorkintype.com),
 with Reserved Font Name "Molle".
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
+
+===============================================
+Agradecimiento por la fuente Alex Brush
+
+Copyright (c) 2011 TypeSETit, LLC (typesetit@att.net),
+with Reserved Font Name "Alex Brush"
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
 */
+
+/* Letras */
 
 @font-face {
 				font-family: 'Molle-Regular';
@@ -19,6 +31,23 @@ http://scripts.sil.org/OFL
 				font-style: normal;
 		}
 
+@font-face {
+				font-family: 'AlexBrush-Regular';
+				src: url('./AlexBrush-Regular/alexbrush-regular.eot');
+				src: url('./AlexBrush-Regular/alexbrush-regular.eot?#iefix') format('embedded-opentype'),
+						 url('./AlexBrush-Regular/alexbrush-regular.woff') format('woff'),
+						 url('./AlexBrush-Regular/alexbrush-regular.ttf') format('truetype'),
+						 url('./AlexBrush-Regular/alexbrush-regular.svg#alexbrush-regular') format('svg');
+				font-weight: normal;
+				font-style: normal;
+		}
+
+.page-header h1
+{
+  font-family: 'AlexBrush-Regular';
+}
+
+/* Barra de navegcion */
 .navbar .brand {
   font-family: 'Molle-Regular';
   font-size: 25px;
