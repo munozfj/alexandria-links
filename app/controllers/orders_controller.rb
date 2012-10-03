@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
   # GET /orders.json
   def index
     @orders = Order.paginate :page=>params[:page], :order=>'created_at desc' , :per_page => 10
-
+    @cart = current_cart
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,6 +15,7 @@ class OrdersController < ApplicationController
   # GET /orders/1.json
   def show
     @order = Order.find(params[:id])
+    @cart = current_cart
 
     respond_to do |format|
       format.html # show.html.erb
@@ -42,6 +43,7 @@ class OrdersController < ApplicationController
   # GET /orders/1/edit
   def edit
     @order = Order.find(params[:id])
+    @cart = current_cart
   end
 
   # POST /orders
@@ -58,6 +60,7 @@ class OrdersController < ApplicationController
         format.json { render json: @order, status: :created, location: @order }
       else
         format.html { render action: "new" }
+        @cart = current_cart
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
     end
@@ -67,6 +70,7 @@ class OrdersController < ApplicationController
   # PUT /orders/1.json
   def update
     @order = Order.find(params[:id])
+    @cart = current_cart
 
     respond_to do |format|
       if @order.update_attributes(params[:order])
@@ -74,6 +78,7 @@ class OrdersController < ApplicationController
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
+        @cart = current_cart
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
     end
