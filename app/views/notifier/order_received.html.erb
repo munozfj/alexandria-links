@@ -1,0 +1,12 @@
+<p>Dear <%= @order.name %>, </p>
+
+<p>Thank you for your recent order from Alexandria Links.</p>
+
+<p>You ordered the following items:</p>
+
+<%= render @order.line_items %>
+
+<br />
+<p>We shall send you a separate e-mail when your order ships.</p>
+<p><%= link_to 'Edit Order', edit_order_url(@order)%></p
+
