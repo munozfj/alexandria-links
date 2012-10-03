@@ -4,7 +4,15 @@
 
 <p>You ordered the following items:</p>
 
-<%= render @order.line_items %>
+<table class="table table-striped">
+  <tr>
+    <th>Qty</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+
+  <%= render @order.line_items %>
+</table>
 
 <br />
 <p>We shall send you a separate e-mail when your order ships.</p>

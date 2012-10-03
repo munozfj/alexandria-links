@@ -39,6 +39,10 @@
 </table>
 <p><%= will_paginate @orders %></p>
 
+<% if false %>
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_order_path,
             :class => 'btn btn-primary' %>
+<% end %>
+
+
