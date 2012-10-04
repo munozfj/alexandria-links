@@ -1,13 +1,14 @@
-<%= form_for @book, :html => { :class => 'form-horizontal' } do |f| %>
+<%= form_for @book, :html => { :multipart => true,:class => 'form-horizontal' } do |f| %>
 
 
   <% if @book.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this product from being saved:</h2>
+      <h2><%= t('errors.template.header', :count=>@book.errors.count,
+:model=>t('activerecord.models.book')) %>: </h2>
 
       <ul>
       <% @book.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <li><%= raw msg %></li>
       <% end %>
       </ul>
     </div>
@@ -15,38 +16,38 @@
 
 
   <div class="control-group">
-    <%= f.label :title, :class => 'control-label' %>
+    <%= f.label (t '.title'),:class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :title, :class => 'text_field input-xlarge' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :photo, :class => 'control-label' %>
+    <%= f.label (t '.photo'), :class => 'control-label' %>
     <div class="controls">
       <%= f.file_field :pic , :class => 'text_field'%>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :author, :class => 'control-label' %>
+    <%= f.label (t '.author'), :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :author, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :description, :class => 'control-label' %>
+    <%= f.label (t '.description'), :class => 'control-label' %>
     <div class="controls">
       <%= f.text_area :description, :rows => 6 ,:class => 'text_area input-xxlarge' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :price, :class => 'control-label' %>
+    <%= f.label (t '.price'), :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :price, :class => 'text_field input-mini' %>
     </div>
   </div>
 
   <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= f.submit t('.submit'), :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 books_path, :class => 'btn' %>
   </div>
