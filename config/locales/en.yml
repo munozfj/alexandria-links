@@ -203,7 +203,8 @@ en:
   activerecord:
     errors:
       <<: *errors
-######################################################
+
+##################################
   layouts:
     sidebar:
       useful_links: "Useful Links"

@@ -222,3 +222,121 @@ fr:
       <<: *errors
 
 
+##################################
+  layouts:
+    sidebar:
+      useful_links: "Liens utiles" ##"Useful Links"
+      home: "Home"
+      books: "Livres" ##"Books"
+      orders: "Ordres" ##"Orders"
+      blog: "Blog"
+      faq: "FAQ"
+
+    footer:
+      acknowledgments: "Remerciements" ##"Acknowledgments"
+      code: "Code"
+
+  store:
+    index:
+      title: "Notre Catalogue Exclusive" ##"Our Exclusive Catalog"
+
+  books:
+    index:
+      page_title: "Livres" ##"Books"
+      new: "Un nouveau livre" ##"New Book"
+      actions: "Actions"
+      edit: "Modifier" ##"Modify"
+      destroy: "Supprimier"  ##"Delete"
+      search: "Recherche" ##"Search"
+      criteria: "Saisir les mots clé" ##"Enter search criteria"
+      title: "Titre" ##"Title"
+      description: "Résumé" ##"Description"
+      confirm: "Etes-vous sûr?" ##"Are you sure?"
+
+    new:
+      page_title: "Un nouveau livre" ##"New Book"
+
+    edit:
+      page_title: "Modifier livre" ##"Edit Book"
+
+    show:
+      page_title: "Book Information"
+      title: "Titre" ##"Title"
+      pic: "Image" ##"Picture"
+      back: "Retour" ##"Back"
+      edit: "Modifier" ##"Edit"
+      destroy: "Supprimier" ##"Delete"
+      confirm: "Etes-vous sûr?" ##""Are you sure?"
+
+    form:
+      title: "Titre" ##"Title"
+      photo: "Image" ##"Picture"
+      author: "Auteur" ##"Author"
+      description: "Résumé" ##"Synopsis"
+      price: "Prix" ##"Price"
+      cancel: "Annuler" ##"Cancel"
+      submit: "Créer un livre" ##"Create Book"
+
+  #Ordenes
+  orders:
+    index:
+      page_title: "Ordres générés" ##"Generated Orders"
+      name: "Client" ##"Customer"
+      address: "Adresse" ##"Address"
+      email: "E-mail"
+      pay_type: "Méthode de paiement" ##"Payment Method"
+      actions: "Actions"
+      edit: "Modifier" ##"Edit"
+      destroy: "Supprimier" ##"Delete"
+      confirm: "Etes-vous sûr?"  ##"Are you sure?"
+      
+
+    new:
+      page_title: "Nouvel ordre"  ##"New Order"
+
+    form:
+      name: "Client" ##"Customer"
+      address: "Adresse" ##"Address"
+      email: "E-mail"
+      pay_type: "Méthode de paiement"  ##"Payment Method"
+      submit: "Créer Ordre" ##"Place Orden"
+      select_type: "Choisissez une méthode de paiement" ##"Select a payment method"
+
+  #Validaciones de los forms
+  activerecord:
+    models:
+      book: "Livre" ##"Book"
+      order: "Ordre" ##"Orden"
+
+    attributes:
+      book:
+        title: "Titre" ##"Title"
+        author: "Auteur" ##"Author"
+        description: "Résumé" ##"Synopsis"
+        price: "Prix" ##"Price"
+
+      order:
+        name: "Client" ##"Customer"
+        address: "Adresse" ##"Address"
+        email: "E-mail"
+        pay_type: "Méthode de paiement" ##"Payment Method"
+
+  carts:
+    cart:
+      your_cart: "Votre panier" ##"Your cart"
+
+  #Flashes
+  book_success: "Livre a été créé avec succès." ##"Book was successfully created."
+  thank_ur_order: "Merci pour votre commande." ##"Thank you for your order."
+
+  #Paginacion
+  will_paginate:
+    previous_label: "&#8592; Précédent" ##"&#8592; Previous"
+    next_label: "Suivant &#8594;" ## "Next &#8594;"
+    page_gap: "&hellip;"
+
+
+
+
+
+
