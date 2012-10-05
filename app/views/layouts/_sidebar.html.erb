@@ -2,9 +2,20 @@
   <ul class="nav nav-list">
     <li class="nav-header"><%=t('.useful_links')%></li>
     <li><%= link_to t('.home'),   store_path  %></li>
-    <li><%= link_to t('.books'),  books_path  %></li>
-    <li><%= link_to t('.orders'), orders_path %></li>
-    <li><%= link_to t('.blog'), articles_path %></li>
+    
+    <li><%= link_to t('.blog'),   articles_path %></li>
     <li><%= link_to t('.faq'),    "#"         %></li>
+
+    <% if session[:user_id] %>
+      <br />
+      <li><%= link_to t('.books'),  books_path  %></li>
+      <li><%= link_to t('.orders'), orders_path %></li>
+      <li><%= link_to t('.users'),  users_path %></li>
+      
+      <br />
+    <%= button_to 'Logout', logout_path, :method => :delete %>
+
+    <% end %>
+
   </ul>
 </div>
