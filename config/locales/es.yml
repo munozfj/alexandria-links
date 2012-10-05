@@ -211,6 +211,8 @@ es:
       home: "Inicio"
       books: "Libros"
       orders: "Órdenes"
+      users: "Usuarios"
+      logout: "Salir"
       blog: "Blog"
       faq: "Preguntas"
 

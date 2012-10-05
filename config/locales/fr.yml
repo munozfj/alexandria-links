@@ -229,6 +229,8 @@ fr:
       home: "Home"
       books: "Livres" ##"Books"
       orders: "Ordres" ##"Orders"
+      users: "utilisateurs" ##"Users"
+      logout: "Déconnexion" ##"Logout"
       blog: "Blog"
       faq: "FAQ"
 

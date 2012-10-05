@@ -1,6 +1,6 @@
 <%- model_class = User -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+  <h1><%=t '.page_title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
@@ -11,26 +11,24 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:email) %></th>
-      <th><%= model_class.human_attribute_name(:address) %></th>
-      <th><%= model_class.human_attribute_name(:occupation) %></th>
-      <th><%= model_class.human_attribute_name(:administrator) %></th>
-      <th><%= model_class.human_attribute_name(:birthday) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <th><%= t'.name' %></th>
+      <th><%= t'.email' %></th>
+      <th><%= t'.address' %></th>
+      <th><%= t'.occupation' %></th>
+      <th><%= t'.administrator' %></th>
+      <th><%= t'.birthday' %></th>
+      <th><%= t'.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= link_to user.id, user_path(user) %></td>
-        <td><%= user.name %></td>
+        <td><%= link_to user.name, user_path(user) %></td>
         <td><%= user.email %></td>
         <td><%= user.address %></td>
         <td><%= user.occupation %></td>
         <td><%= user.administrator %></td>
-        <td><%=l user.birthday %></td>
+        <td><%= user.birthday %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_user_path(user), :class => 'btn btn-mini btn-info' %>

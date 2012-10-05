@@ -206,6 +206,8 @@ nl:
       home: "Home"
       books: "Boeken" ##"Books"
       orders: "Bestellingen" ##"Orders"
+      users: "Gebruikers" ##"Users"
+      logout: "Afmelden" ##"Logout"
       blog: "Blog"
       faq: "Vragen" ##Preguntas
 

@@ -20,10 +20,10 @@
     <tr>
       <th><%= t '.title' %></th>
       <th><%= t '.description' %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <th><%= t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody> 
     <% @books.each do |book| %>
       <tr>
         <td><%= link_to  image_tag( book.pic.url(:thumb) ), book_path(book) %></td>

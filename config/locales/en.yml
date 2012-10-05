@@ -211,6 +211,8 @@ en:
       home: "Home"
       books: "Books"
       orders: "Orders"
+      users: "Users"
+      logout: "Logout"
       blog: "Blog"
       faq: "FAQ"
 
@@ -284,11 +286,58 @@ en:
       submit: "Place Orden"
       select_type: "Select a payment method"
 
+  users:
+    index:
+      page_title: "Users"
+      name: "Name"
+      email: "E-mail"
+      address: "Address"
+      occupation: "Occupation"
+      administration: "Adm"
+      birthday: "Birthday"
+      actions: "Actions"
+      edit: "Edit"
+      destroy: "Delete"
+      confirm: "Are you sure?"
+      new: "New"
+
+    new:
+      page_title: "New user"
+
+    form:
+      name: "Name"
+      email: "E-mail"
+      password: "Password"
+      password_confirm: "Confirm"
+      address: "Address"
+      administrator: "Adm"
+      occupation: "Occupation"
+      birthday: "Birthday"
+      submit: "Create User"
+      cancel: "Cancel"
+
+    edit:
+      page_title: "Edit User"
+
+    show:
+      page_title: "User Information"
+      name: "Name"
+      email: "E-mail"
+      address: "Address"
+      occupation: "Occupation"
+      birthday: "Birthday"
+      administrator: "Adm"
+      back: "Back"
+      edit: "Edit"
+      destroy: "Delete"
+      confirm: "Are you sure"
+
   #Validaciones de los forms
   activerecord:
     models:
       book: "Book"
       order: "Orden"
+      user: "Usuario"
 
     attributes:
       book:
@@ -302,6 +351,15 @@ en:
         address: "Address"
         email: "E-mail"
         pay_type: "Payment Method"
+
+      user:
+        name: "Name"
+        email: "E-mail"
+        password: "Password"
+        password_conformation: "Confirm"
+        address: "Address"
+        birthday: "Birthday"
+        administrator: "Adm"
 
   carts:
     cart:
