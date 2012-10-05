@@ -197,3 +197,123 @@ nl:
   activerecord:
     errors:
       <<: *errors
+
+
+##################################
+  layouts:
+    sidebar:
+      useful_links: "Nuttige links" ##"Useful Links"
+      home: "Home"
+      books: "Boeken" ##"Books"
+      orders: "Bestellingen" ##"Orders"
+      blog: "Blog"
+      faq: "Vragen" ##Preguntas
+
+    footer:
+      acknowledgments: "Dankbetuiging" ##"Acknowledgments"
+      code: "Code"
+
+  store:
+    index:
+      title: "Onze Exclusive Catalog" ##"Our Exclusive Catalog"
+
+  books:
+    index:
+      page_title: "Boeken" ##"Books"
+      new: "Nieuw boek" ##"New Book"
+      actions: "Acties"
+      edit: "Wijzigen" ##"Modify"
+      destroy: "Verwijderen"  ##"Delete"
+      search: "Zoeken" ##"Search"
+      criteria: "Voer zoekcriteria" ##"Enter search criteria"
+      title: "Titel" ##"Title"
+      description: "Beschrijving" ##"Description"
+      confirm: "Weet je het zeker?" ##"Are you sure?"
+
+    new:
+      page_title: "Nieuw boek" ##"New Book"
+
+    edit:
+      page_title: "Bewerk boek" ##"Edit Book"
+
+    show:
+      page_title: "Boek Informatie"
+      title: "Title" ##"Title"
+      pic: "Beeld" ##"Picture"
+      back: "Terug" ##"Back"
+      edit: "Bewerken" ##"Edit"
+      destroy: "Verwijderen" ##"Delete"
+      confirm: "Weet je het zeker?" ##""Are you sure?"
+
+    form:
+      title: "Titel" ##"Title"
+      photo: "Beeld" ##"Picture"
+      author: "Auteur" ##"Author"
+      description: "Beschrijving" ##"Synopsis"
+      price: "Prijs" ##"Price"
+      cancel: "Annuleren" ##"Cancel"
+      submit: "Maak Boek" ##"Create Book"
+
+  #Ordenes
+  orders:
+    index:
+      page_title: "Gegenereerd Bestellingen" ##"Generated Orders"
+      name: "Klant" ##"Customer"
+      address: "Adres" ##"Address"
+      email: "E-mail"
+      pay_type: "Betalingsmethode" ##"Payment Method"
+      actions: "Acties"
+      edit: "Bewerken" ##"Edit"
+      destroy: "Verwijderen" ##"Delete"
+      confirm: "Weet je het zeker?"  ##"Are you sure?"
+      
+
+    new:
+      page_title: "Nieuwe Orde"  ##"New Order"
+
+    form:
+      name: "Klant" ##"Customer"
+      address: "Adres" ##"Address"
+      email: "E-mail"
+      pay_type: "Betalingsmethode"  ##"Payment Method"
+      submit: "Maak Bestelling" ##"Place Orden"
+      select_type: "Selecteer een betaalmethode" ##"Select a payment method"
+
+  #Validaciones de los forms
+  activerecord:
+    models:
+      book: "Boek" ##"Book"
+      order: "Orde" ##"Orden"
+
+    attributes:
+      book:
+        title: "Titel" ##"Title"
+        author: "Auteur" ##"Author"
+        description: "Beschrijving" ##"Synopsis"
+        price: "Prijs" ##"Price"
+
+      order:
+        name: "Klant" ##"Customer"
+        address: "Adres" ##"Address"
+        email: "E-mail"
+        pay_type: "Betalingsmethode" ##"Payment Method"
+
+  carts:
+    cart:
+      your_cart: "Uw winkelwagen" ##"Your cart"
+
+  #Flashes
+  book_success: "Boek is succesvol aangemaakt." ##"Book was successfully created."
+  thank_ur_order: "Dank u voor uw bestelling." ##"Thank you for your order."
+
+  #Paginacion
+  will_paginate:
+    previous_label: "&#8592; Vorig" ##"&#8592; Previous"
+    next_label: "Volgend &#8594;" ## "Next &#8594;"
+    page_gap: "&hellip;"
+
+
+
+
+
+
