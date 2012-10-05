@@ -1,21 +1,27 @@
         Bienvenidos a Alexandria Links
 
-Materia:  
-    Lenguajes Scripting
+Materia: 
 
-Docente:  
-    Carla Ares
+Lenguajes Scripting
 
-Año:      
-    2012
+Docente:
 
-Alumnos:  
-    Juan Francisco Pose
+Carla Ares
 
-    Fernando Muñoz
+Año:
 
-Projecto: 
-    Alexandria Links
+2012
 
-Objetivo: 
-    Se trata de una libreria virtual como trabajo final de la materia y que para nada persigue proposito comercial alguno.
+Alumnos:
+
+Juan Francisco Pose
+
+Fernando Muñoz
+
+Projecto:
+
+Alexandria Links
+
+Objetivo:
+
+Se trata de una libreria virtual como trabajo final de la materia y que para nada persigue proposito comercial alguno.

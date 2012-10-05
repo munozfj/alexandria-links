@@ -4,6 +4,6 @@ LANGUAGES = [
     ['English' ,                 'en' ],
     ["Espa&ntilde;ol".html_safe, 'es' ],
     ["Francais",                 'fr' ],
-    ["Nederlans",                'nl' ]
+    ["Nederlands",               'nl' ]
 ]
 
