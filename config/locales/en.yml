@@ -204,8 +204,6 @@ en:
     errors:
       <<: *errors
 ######################################################
-  book_success: "Book was successfully created."
-
   layouts:
     sidebar:
       useful_links: "Useful Links"
@@ -260,15 +258,63 @@ en:
       cancel: "Cancel"
       submit: "Create Book"
 
+  #Ordenes
+  orders:
+    index:
+      page_title: "Generated Orders"
+      name: "Customer"
+      address: "Address"
+      email: "E-mail"
+      pay_type: "Payment Method"
+      actions: "Actions"
+      edit: "Edit"
+      destroy: "Delete"
+      confirm: "Are you sure?"
+      
+
+    new:
+      page_title: "New Order"
+
+    form:
+      name: "Customer"
+      address: "Address"
+      email: "E-mail"
+      pay_type: "Payment Method"
+      submit: "Place Orden"
+      select_type: "Select a payment method"
+
+  #Validaciones de los forms
   activerecord:
     models:
       book: "Book"
+      order: "Orden"
+
     attributes:
       book:
         title: "Title"
         author: "Author"
         description: "Synopsis"
         price: "Price"
+
+      order:
+        name: "Customer"
+        address: "Address"
+        email: "E-mail"
+        pay_type: "Payment Method"
+
+  carts:
+    cart:
+      your_cart: "Your cart"
+
+  #Flashes
+  book_success: "Book was successfully created."
+  thank_ur_order: "Thank you for your order."
+
+  #Paginacion
+  will_paginate:
+    previous_label: "&#8592; Previous"
+    next_label: "Next &#8594;"
+    page_gap: "&hellip;"
 
 
 

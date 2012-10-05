@@ -1,0 +1,23 @@
+<p>Estimado <%= @order.name %>, </p>
+
+<p>Muchas gracias por su reciente orden en Alexandria Links.</p>
+
+<p>El pedido consta de los siguientes libros:</p>
+
+<table class="table table-striped">
+  <tr>
+    <th>Cant</th>
+    <th>Descripción</th>
+    <th>Importe</th>
+  </tr>
+
+  <%= render @order.line_items %>
+</table>
+
+<br />
+<p>En breve, le estaremos enviado un e-mail con la orden de envío de los mismos.</p>
+
+
+
+
+

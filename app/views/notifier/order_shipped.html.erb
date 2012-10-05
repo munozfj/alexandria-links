@@ -1,9 +1,20 @@
-<h3>Pragmatic Order Shipped</h3>
-<p>
-This is just to let you know that we've shipped your recent order:
-</p>
-<table>
-<tr><th colspan="2">Qty</th><th>Description</th></tr>
-<%= render @order.line_items %>
+<p>Dear <%= @order.name %>, </p>
+
+<p>Thank you for your recent order from Alexandria Links.</p>
+
+<p>You ordered the following items:</p>
+
+<table class="table table-striped">
+  <tr>
+    <th>Qty</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+
+  <%= render @order.line_items %>
 </table>
+
+<br />
+<p>We shall send you a separate e-mail when your order ships.</p>
+<p><%= link_to 'Edit Order', edit_order_url(@order)%></p>
 

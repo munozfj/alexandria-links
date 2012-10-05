@@ -23,4 +23,5 @@ class Notifier < ActionMailer::Base
 
     mail to: "to@example.org"
   end
+
 end

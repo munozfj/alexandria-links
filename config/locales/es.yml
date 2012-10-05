@@ -205,8 +205,6 @@ es:
       <<: *errors
 
 ##########################
-  book_success: "El libro se cargó correctamente."
-
   layouts:
     sidebar:
       useful_links: "Enlaces Útiles"
@@ -224,6 +222,7 @@ es:
     index:
       title: "Nuestro Exclusivo Catálogo"
 
+  #Libros
   books:
     index:
       page_title: "Libros"
@@ -255,16 +254,46 @@ es:
     form:
       title: "Título"
       photo: "Imagen"
-      
       author: "Autor"
       description: "Sinopsis"
       price: "Precio"
       cancel: "Cancelar"
       submit: "Cargar Libro"
 
+  #Ordenes
+  orders:
+    index:
+      page_title: "Ordenes Generadas"
+      name: "Cliente"
+      address: "Domicilio"
+      email: "E-mail"
+      pay_type: "Forma de Pago"
+      actions: "Acciones"
+      edit: "Modificar"
+      destroy: "Eliminar"
+      confirm: "¿Está seguro?"
+
+    new:
+      page_title: "Nueva Orden"
+
+    form:
+      name: "Cliente"
+      address: "Domicilio"
+      email: "E-mail"
+      pay_type: "Forma de Pago"
+      select_type: "Elija una forma de pago"
+      submit: "Cargar Orden"
+
+  carts:
+    cart:
+      your_cart: "Su carrito"
+
+  #Validaciones 
   activerecord:
     models:
       book: "Libro"
+      order: "Orden"
+
     attributes:
       book:
         title: "Título"
@@ -272,6 +301,22 @@ es:
         description: "Sinopsis"
         price: "Precio"
 
+      order:
+        name: "Cliente"
+        address: "Domicilio"
+        email: "E-mail"
+        pay_type: "Forma de Pago"
+      
+
+  #Flashes
+  book_success: "El libro se cargó correctamente."
+  thank_ur_order: "Muchas gracias por su orden."
+
+  #Paginacion
+  will_paginate:
+    previous_label: "&#8592; Previas"
+    next_label: "Próximas &#8594;"
+    page_gap: "&hellip;"
 
 
 
