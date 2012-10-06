@@ -59,7 +59,7 @@ http://scripts.sil.org/OFL
 }
 
 /* Background */
-body
+body-color
 {
 
 background: #ffd65e; /* Old browsers */
@@ -71,6 +71,11 @@ background: -ms-linear-gradient(left, #ffd65e 0%,#febf04 100%); /* IE10+ */
 background: linear-gradient(to right, #ffd65e 0%,#febf04 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 */
 
+}
+
+body
+{
+  background-image: url("/assets/wood.png");
 }
 
 /* footer */
