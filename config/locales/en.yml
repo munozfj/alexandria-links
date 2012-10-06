@@ -286,6 +286,7 @@ en:
       submit: "Place Orden"
       select_type: "Select a payment method"
 
+  #Users
   users:
     index:
       page_title: "Users"
@@ -302,7 +303,7 @@ en:
       new: "New"
 
     new:
-      page_title: "New user"
+      page_title: "New User"
 
     form:
       name: "Name"
@@ -330,7 +331,7 @@ en:
       back: "Back"
       edit: "Edit"
       destroy: "Delete"
-      confirm: "Are you sure"
+      confirm: "Are you sure?"
 
   #Validaciones de los forms
   activerecord:

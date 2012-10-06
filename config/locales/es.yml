@@ -290,11 +290,58 @@ es:
     cart:
       your_cart: "Su carrito"
 
+  users:
+    index:
+      page_title: "Usuarios" ##"Users"
+      name: "Nombre" ##"Name"
+      email: "E-mail"
+      address: "Domicilio" ##"Address"
+      occupation: "Ocupación" ##"Occupation"
+      administration: "Adm"
+      birthday: "Fecha de Nacimiento" ##"Birthday"
+      actions: "Acciones" ##"Actions"
+      edit: "Modificar" ##"Edit"
+      destroy: "Eliminar" ##"Delete"
+      confirm: "¿Está seguro" ##"Are you sure?"
+      new: "Nuevo" ##"New"
+
+    new:
+      page_title: "Nuevo Usuario" ##"New user"
+
+    form:
+      name: "Nombre" ##"Name"
+      email: "E-mail"
+      password: "Password"
+      password_confirm: "Confirmación" ##"Confirm"
+      address: "Domicilio" ##"Address"
+      administrator: "Adm"
+      occupation: "Ocupación" ##"Occupation"
+      birthday: "Fecha de Nacimiento" ##"Birthday"
+      submit: "Crear Usuario" ##"Create User"
+      cancel: "Cancelar" ## "Cancel"
+
+    edit:
+      page_title: "Modificar Usuario" ##"Edit User"
+
+    show:
+      page_title: "Información del Usuario" ##"User Information"
+      name: "Nombre" ##"Name"
+      email: "E-mail"
+      address: "Domicilio" ##"Address"
+      occupation: "Ocupación " ##"Occupation"
+      birthday: "Fecha de Nacimiento" ##"Birthday"
+      administrator: "Adm"
+      back: "Atrás" ##"Back"
+      edit: "Modificar" ##"Edit"
+      destroy: "Eliminar" ##"Delete"
+      confirm: "¿Está seguro?" ##"Are you sure"
+
   #Validaciones 
   activerecord:
     models:
       book: "Libro"
       order: "Orden"
+      user: "Usuario"
 
     attributes:
       book:
@@ -308,6 +355,15 @@ es:
         address: "Domicilio"
         email: "E-mail"
         pay_type: "Forma de Pago"
+
+      user:
+        name: "Nombre" ##"Name"
+        email: "E-mail"
+        password: "Password"
+        password_conformation: "Confirmación" ##"Confirm"
+        address: "Domicilio" ##"Address"
+        birthday: "Fecha de Nacimiento" ##"Birthday"
+        administrator: "Adm"
       
 
   #Flashes

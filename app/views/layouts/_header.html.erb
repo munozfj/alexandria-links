@@ -10,17 +10,24 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
 
-              <li>
-                <%= form_tag store_path, :class => 'locale' do %>
-                <%= select_tag 'set_locale', 
-                   options_for_select(LANGUAGES, I18n.locale.to_s),
-                  :onchange => 'this.form.submit()',class: "span2 btn" %>
+              <% if session[:user_id] %>
+                <li>
+                  <%= form_tag store_path, :class => 'locale' do %>
+                  <%= select_tag 'set_locale', 
+                     options_for_select(LANGUAGES, I18n.locale.to_s),
+                    :onchange => 'this.form.submit()',class: "span2 btn" %>
 
-                    <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
-                <% end %>
+                      <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
+                  <% end %>
+                </li>
+              <% end %>
+
+              <li>
+                <%= link_to "Sign In", admin_path %>
               </li>
+
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
 </div>

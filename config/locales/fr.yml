@@ -304,11 +304,60 @@ fr:
       submit: "Créer Ordre" ##"Place Orden"
       select_type: "Choisissez une méthode de paiement" ##"Select a payment method"
 
+  #Users
+  users:
+    index:
+      page_title: "Utilisateurs" #Users
+      name: "Nom" #"Name"
+      email: "E-mail"
+      address: "Adresse" #"Address"
+      occupation: "Profession" ##"Occupation"
+      administration: "Adm"
+      birthday: "Date de Naissance" #"Birthday"
+      actions: "Actions"
+      edit: "Modifier" #"Edit"
+      destroy: "Supprimier" #"Delete"
+      confirm: "Etes-vous sûr?"  #"Are you sure?"
+      new: "Nouveau" #"New"
+
+    new:
+      page_title: "Nouvel utilisateur" ##"New User"
+
+    form:
+      name: "Nom" ##"Name"
+      email: "E-mail"
+      password: "Mot de passe" ##"Password"
+      password_confirm: "Confirme" #"Confirm"
+      address: "Adresse" #"Address"
+      administrator: "Adm"
+      occupation: "Profession" #"Occupation"
+      birthday: "Date de Naissance" #"Birthday"
+      submit: "Créer un utilisateur" #"Create User"
+      cancel: "Annuler" #"Cancel"
+
+    edit:
+      page_title: "Modifier l'utilisateur" #"Edit User"
+
+    show:
+      page_title: "Informations utilisateur" #"User Information"
+      name: "Nom" #"Name"
+      email: "E-mail"
+      address: "Adresse" #"Address"
+      occupation: "Profession" #"Occupation"
+      birthday: "Date de Naissance" #"Birthday"
+      administrator: "Adm"
+      back: "Retour" #"Back"
+      edit: "Modifier" #"Edit"
+      destroy: "Supprimier" #"Delete"
+      confirm: "Etes-vous sûr?"  #"Are you sure?"
+
+
   #Validaciones de los forms
   activerecord:
     models:
       book: "Livre" ##"Book"
       order: "Ordre" ##"Orden"
+      user: "Utilisateur" #"User"
 
     attributes:
       book:
@@ -322,6 +371,15 @@ fr:
         address: "Adresse" ##"Address"
         email: "E-mail"
         pay_type: "Méthode de paiement" ##"Payment Method"
+
+      user:
+        name: "Nom" #"Name"
+        email: "E-mail"
+        password: "Mot de passe" #"Password"
+        password_conformation: "Confirmer" #"Confirm"
+        address: "Adresse" #"Address"
+        birthday: "Date de Naissance" ##"Birthday"
+        administrator: "Adm"
 
   carts:
     cart:

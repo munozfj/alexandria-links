@@ -12,7 +12,7 @@
       <li><%= link_to t('.orders'), orders_path %></li>
       <li><%= link_to t('.users'),  users_path %></li>
       <br />
-    <%= button_to t('.logout'), logout_path, :method => :delete %>
+    <%= button_to t('.logout'), logout_path, :method => :delete , class: "btn btn-primary btn-small" %>
 
     <% end %>
 

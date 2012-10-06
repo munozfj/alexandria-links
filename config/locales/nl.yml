@@ -281,6 +281,54 @@ nl:
       submit: "Maak Bestelling" ##"Place Orden"
       select_type: "Selecteer een betaalmethode" ##"Select a payment method"
 
+
+  #Users
+  users:
+    index:
+      page_title: "Gebruikers" #"Users"
+      name: "Naam" #"Name"
+      email: "E-mail"
+      address: "Adres" #"Address"
+      occupation: "Beroep" #"Occupation"
+      administration: "Adm"
+      birthday: "Geboortedatum" #"Birthday"
+      actions: "Acties" #"Actions"
+      edit: "Wijzigen" #"Edit"
+      destroy: "Verwijderen" #"Delete"
+      confirm: "Weet je het zeker? " #"Are you sure?"
+      new: "Nieuw" #"New"
+
+    new:
+      page_title: "Nieuwe Gebruiker" #"New User"
+
+    form:
+      name: "Naam" #"Name"
+      email: "E-mail"
+      password: "Watchwoord" #"Password"
+      password_confirm: "Bevestig" #"Confirm"
+      address: "Adres" #"Address"
+      administrator: "Adm"
+      occupation: "Beroep" #"Occupation"
+      birthday: "Geboortedatum" #"Birthday"
+      submit: "Maak Gebruiker" #"Create User"
+      cancel: "Annuleren" #"Cancel"
+
+    edit:
+      page_title: "Edit User"
+
+    show:
+      page_title: "Gebruikersinformatie" #"User Information"
+      name: "Naam" #"Name"
+      email: "E-mail"
+      address: "Adres" #"Address"
+      occupation: "Beroep" #"Occupation"
+      birthday: "Geboortedatum" #"Birthday"
+      administrator: "Adm"
+      back: "Terug" #"Back"
+      edit: "Bewerken" #"Edit"
+      destroy: "Verwijderen" #"Delete"
+      confirm: "Weet je het zeker?" #"Are you sure?"
+
   #Validaciones de los forms
   activerecord:
     models:
@@ -299,6 +347,15 @@ nl:
         address: "Adres" ##"Address"
         email: "E-mail"
         pay_type: "Betalingsmethode" ##"Payment Method"
+
+      user:
+        name: "Naam" #"Name"
+        email: "E-mail"
+        password: "Watchwoord" #"Password"
+        password_conformation: "Bevestig" #"Confirm"
+        address: "Adres" #"Address"
+        birthday: "Geboortedatum" #"Birthday"
+        administrator: "Adm"
 
   carts:
     cart:
