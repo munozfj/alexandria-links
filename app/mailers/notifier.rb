@@ -8,7 +8,7 @@ class Notifier < ActionMailer::Base
   #
   def order_received(order)
     @order=order
-    attachments["living-book.png"] = File.read("#{Rails.root}/app/assets/images/living-books.png")
+    attachments["living-book.png"] = File.read("#{Rails.root}/app/assets/images/logo-attach.png")
 
     mail(to: "#{order.name} < #{order.email} >", subject: "Alexandria Links Order Confirmation")
   end
