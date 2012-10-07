@@ -2,20 +2,20 @@ function cambio(valor)
 {
   /*alert("me llego el valor " + valor);*/
 
-  if(valor == "green")
+  if(valor == "violet")
   {
     document.body.style.color="white";
-	  document.body.style.backgroundImage="url('/assets/background-green.jpg')";
+	  document.body.style.backgroundImage="url('/assets/background-violet.jpg')";
   }
   else if(valor == "blue")
   {
-    document.body.style.color="yellow";
+    document.body.style.color="orange";
 	  document.body.style.backgroundImage="url('/assets/background-blue.jpg')";
   } 
-  else if(valor == "lightblue")
+  else if(valor == "brown")
   {
     document.body.style.color="white";
-	  document.body.style.backgroundImage="url('/assets/background-lightblue.png')";
+	  document.body.style.backgroundImage="url('/assets/background-brown.jpg')";
   } 
   else if(valor == "pink")
   {

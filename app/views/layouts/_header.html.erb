@@ -10,35 +10,24 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
 
-<% if false %>
+
               <li>
-    <div class="btn-group">
-    <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
-    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-    <ul class="dropdown-menu">
-    <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-    <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-    <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
-    <li class="divider"></li>
-    <li><a href="#"><i class="i"></i> Make admin</a></li>
-    </ul>
-    </div>
-              </li>
-<% end %>
-              <li>
-                <%= form_tag  do %>
+
                   <%= select_tag 'change_background', 
-                     options_for_select([ ['Default','default'],
-                                          ['Blue', 'blue'], 
-                                          ['Green', 'green'], 
-                                          ['Light Blue','lightblue'],
-                                          ['Pink','pink'],
-                                          ['Wood', 'wood'],
-                                          ['Vertical Wood', 'verticalwood']
+                     options_for_select([ 
+
+                      ['Default','default'],
+                      ['Blue', 'blue'], 
+                      ['Brown','brown'],
+                      ['Pink','pink'],
+                      ['Vertical Wood', 'verticalwood'],
+                      ['Violet', 'violet'], 
+                      ['Wood', 'wood']
+                                          
                                         ]) ,
                     :onchange => 'cambio(this.value)',
-                    class: "span2 btn btn-success btn-small dropdown-toggle" %>
-                  <% end %>
+                    class: "span1", style:"width:100%" %>
+
               </li>
  
               <% if session[:user_id] %>

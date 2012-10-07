@@ -59,26 +59,9 @@ http://scripts.sil.org/OFL
 }
 
 /* Background */
-body-old
-{
 
-background: #ffd65e; /* Old browsers */
-background: -moz-linear-gradient(left, #ffd65e 0%, #febf04 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, #ffd65e 0%,#febf04 100%); /* IE10+ */
-background: linear-gradient(to right, #ffd65e 0%,#febf04 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 */
 
-}
 
-/*
-body
-{
-  background-image: url("/assets/background-wood-vertical.png");
-}
-*/
 
 /* footer */
 
@@ -120,20 +103,23 @@ footer ul li {
 
 /* Our Catalog */
 
-#store  .entry {
+#store  .entry 
+{
   overflow: auto;
   margin-top: 1em;
   border-bottom: 1px dotted #77d;
   text-align: justify;
 }
 
-#store  .title {
+#store  .title 
+{
   font-size: 120%;
   font-family: sans-serif;
 }
 
 
-#store .entry img {
+#store .entry img 
+{
   width: 80px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -141,13 +127,15 @@ footer ul li {
 }
 
 
-#store .entry h4 h3 {
+#store .entry h4 h3 
+{
  margin-top: 0;
  margin-bottom: 2px;
  color: #227;
 }
 
-#store .entry p {
+#store .entry p 
+{
  margin-top: 0.5em; 
  margin-bottom: 0.8em; 
 }
@@ -157,17 +145,19 @@ footer ul li {
  margin-bottom: 0.5em;
 }
 
-#store .entry .add_to_cart {
+#store .entry .add_to_cart 
+{
   position: relative;
 }
 
-#store .entry  .price {
-  color: #0064cd;
+#store .entry  .price 
+{
   font-weight: bold;
   margin-right: 2em;
 }
 
-#store .entry form, #store .entry form div {
+#store .entry form, #store .entry form div 
+{
 display: inline;
 }
 
