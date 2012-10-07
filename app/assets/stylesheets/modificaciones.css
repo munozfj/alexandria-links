@@ -59,7 +59,7 @@ http://scripts.sil.org/OFL
 }
 
 /* Background */
-body-color
+body-old
 {
 
 background: #ffd65e; /* Old browsers */
@@ -73,10 +73,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', end
 
 }
 
+/*
 body
 {
-  background-image: url("/assets/wood-vertical.png");
+  background-image: url("/assets/background-wood-vertical.png");
 }
+*/
 
 /* footer */
 
