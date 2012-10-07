@@ -124,6 +124,9 @@ footer ul li {
   margin-right: 5px;
   margin-bottom: 5px;
   float: left;
+  border: 3px solid white;
+  border-radius:25px;
+-moz-border-radius:25px;
 }
 
 
