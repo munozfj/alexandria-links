@@ -7,6 +7,11 @@ function cambio(valor)
     document.body.style.color="white";
 	  document.body.style.backgroundImage="url('/assets/background-violet.jpg')";
   }
+  else if(valor == "black")
+  {
+    document.body.style.color="white";
+	  document.body.style.backgroundImage="url('/assets/background-black.jpg')";
+  } 
   else if(valor == "blue")
   {
     document.body.style.color="orange";
