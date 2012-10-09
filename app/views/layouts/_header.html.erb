@@ -29,22 +29,15 @@
 
               </li>
  
-              <%#= Selector de Idioma %>
-              <% if session[:user_id] %>
-                <li>
-                  <%= form_tag store_path, :class => 'locale' do %>
-                  <%= select_tag 'set_locale', 
-                     options_for_select(LANGUAGES, I18n.locale.to_s),
-                    :onchange => 'this.form.submit()',class: "span2" %>
-                   <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
-                  <% end %>
-                </li>
-              <% end %>
-
+              
               <%#= Link para Login %>
               <% if !session[:user_id] %>
                 <li>
                   <%= link_to "Sign In", admin_path %>
+                </li>
+
+                <li>
+                  <%= link_to "Sign Up", new_user_path %>
                 </li>
               <% end %>
 

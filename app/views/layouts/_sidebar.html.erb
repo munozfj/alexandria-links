@@ -1,19 +1,31 @@
 <div class="well sidebar-nav">
   <ul class="nav nav-list">
+
+    <% if session[:user_id] %>
+      <%#= Selector de Idioma %>
+      <li>
+        <%= form_tag store_path, :class => 'locale' do %>
+          <%= select_tag 'set_locale', 
+                  options_for_select(LANGUAGES, I18n.locale.to_s),
+                  :onchange => 'this.form.submit()', class: "span9" %>
+          <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
+        <% end %>
+      </li>
+
+      <%= button_to t('.logout'), logout_path, :method => :delete , class: "btn btn-primary btn-small" %>
+    
+    <% end %>
+
     <li class="nav-header"><%=t('.useful_links')%></li>
     <li><%= link_to t('.home'),   store_path  %></li>
     
-    <li><%= link_to t('.blog'),   articles_path %></li>
-    <li><%= link_to t('.faq'),    "#"         %></li>
-
     <% if session[:user_id] %>
+      <li><%= link_to t('.blog'),   articles_path %></li>
+      <li><%= link_to t('.faq'),    "#"         %></li>
       <br />
       <li><%= link_to t('.books'),  books_path  %></li>
       <li><%= link_to t('.orders'), orders_path %></li>
       <li><%= link_to t('.users'),  users_path %></li>
-      <br />
-      <%= button_to t('.logout'), logout_path, :method => :delete , class: "btn btn-primary btn-small" %>
     <% end %>
-
   </ul>
 </div>
