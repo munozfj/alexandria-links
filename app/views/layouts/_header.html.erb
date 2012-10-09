@@ -10,16 +10,18 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
 
-
+              <%#= Selector de Background %>
               <li>
 
                   <%= select_tag 'change_background', 
                      options_for_select([ 
 
                       ['Default','default'],
-                      ['Black','black'],
                       ['Brown','brown'],
-                      ['Wood', 'wood']
+                      ['Blue','blue'],
+                      ['Pink','pink'],
+                      ['Red','red'],
+                      ['Wood','wood']
                                           
                                         ]) ,
                     :onchange => 'cambio(this.value)',
@@ -27,22 +29,33 @@
 
               </li>
  
+              <%#= Selector de Idioma %>
               <% if session[:user_id] %>
                 <li>
                   <%= form_tag store_path, :class => 'locale' do %>
                   <%= select_tag 'set_locale', 
                      options_for_select(LANGUAGES, I18n.locale.to_s),
-                    :onchange => 'this.form.submit()',class: "span2 btn" %>
-
-                      <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
+                    :onchange => 'this.form.submit()',class: "span2" %>
+                   <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
                   <% end %>
                 </li>
               <% end %>
 
-              <li>
-                <%= link_to "Sign In", admin_path %>
-              </li>
-
+              <%#= Link para Login %>
+              <% if !session[:user_id] %>
+                <li>
+                  <%= link_to "Sign In", admin_path %>
+                </li>
+              <% end %>
+<li>
+                  <%= link_to "Sign In", admin_path %>
+                </li>
+<li>
+                  <%= link_to "Sign In", admin_path %>
+                </li>
+<li>
+                  <%= link_to "Sign In", admin_path %>
+                </li>
             </ul>
           </div>
         </div>

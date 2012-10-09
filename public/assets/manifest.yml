@@ -1,6 +1,9 @@
 ---
-background-black.jpg: background-black-b5736467119f0be943a0d65fd0a224af.jpg
+background-blue.jpg: background-blue-f9fdb78757291886a1b0a375b7f9e61b.jpg
 background-brown.jpg: background-brown-00a4781b12ac23cc03b2c83a2792c5bd.jpg
+background-green.jpg: background-green-a84336313b84ecd9870f46e31ead64dc.jpg
+background-pink.jpg: background-pink-3c8fa591083cf7c2f29f8ef14f2d48a4.jpg
+background-red.jpg: background-red-8f62f4e19ad3e5de55063aadb64b7bf4.jpg
 background-wood-vertical.png: background-wood-vertical-e4ca5a41c3633fab5ac98bbfca8cd91e.png
 background-wood.png: background-wood-c407465f429006e61138552cf9a4a87c.png
 favicon-114x114-precomposed.png: favicon-114x114-precomposed-c40c69e56ad8884898c21c50e1e28bc2.png
@@ -8,7 +11,7 @@ favicon-144x144-precomposed.png: favicon-144x144-precomposed-daa8bb5fffd15a37bc1
 favicon-72x72-precomposed.png: favicon-72x72-precomposed-6f906233be40fbc7e93ea07c07e12dfd.png
 favicon1.png: favicon1-781d6156eae481cb9e23b3bf5d2fccdb.png
 logo-attach.png: logo-attach-34cf06a7ac85a6719eba685a64dcb072.png
-application.js: application-34422db7e37549cad3aec101a79e078b.js
+application.js: application-60b12c52cfcbc0f8df39f4edb1784933.js
 AlexBrush-Regular/OFL.txt: AlexBrush-Regular/OFL-08f9bba9b95bfb9efe3b17fc4babf09c.txt
 AlexBrush-Regular/alexbrush-regular.eot: AlexBrush-Regular/alexbrush-regular-2c870256a145e36c40947694c1302be7.eot
 AlexBrush-Regular/alexbrush-regular.html: AlexBrush-Regular/alexbrush-regular-d98e749afef209251c499f5142a420b8.html
