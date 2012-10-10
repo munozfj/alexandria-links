@@ -16,7 +16,7 @@ function cambio(valor)
   } 
   else if(valor == "blue")
   {
-    document.body.style.color="yellow";
+    document.body.style.color="white";
 	  document.body.style.backgroundImage="url('/assets/background-blue.jpg')";
   } 
   else if(valor == "brown")
@@ -36,8 +36,8 @@ function cambio(valor)
   } 
   else if(valor == "red")
   {
-    document.body.style.color="gray";
-	  document.body.style.backgroundImage="url('/assets/background-red.jpg')";
+    document.body.style.color="white";
+	  document.body.style.backgroundImage="url('/assets/background-red.png')";
   } 
   else 
   {

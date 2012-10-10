@@ -59,7 +59,11 @@ http://scripts.sil.org/OFL
 }
 
 /* Background */
-
+body
+{
+  background-color: lightgray;
+  color: white;
+}
 
 
 
