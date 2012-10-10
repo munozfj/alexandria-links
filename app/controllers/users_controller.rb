@@ -26,6 +26,7 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
+    @user_conect = User.find_by_id(session[:user_id])
 
     respond_to do |format|
       format.html # new.html.erb

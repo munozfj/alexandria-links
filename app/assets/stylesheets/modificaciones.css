@@ -226,4 +226,30 @@ margin: 0.5em 0;
 
 */
 
+/* Fecha */
+#user_birthday_1i
+{
+  width: 65px;
+}
+
+#user_birthday_2i
+{
+  width: 100px;
+}
+
+#user_birthday_3i
+{
+  width: 50px;
+}
+
+.hero-unit 
+{
+  color: black;
+  opacity: .8;
+}
+
+.well .sidebar-nav .nav .nav-list .row-fluid .container-fluid .span3
+{
+  opacity: .8;
+}
 

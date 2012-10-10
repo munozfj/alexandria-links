@@ -53,16 +53,19 @@
   <div class="control-group">
     <%= f.label (t '.birthday'), :class => 'control-label' %>
     <div class="controls">
-      <%= f.date_select :birthday, :class => 'option-small' %>
+      <%= f.date_select :birthday, :class => 'option-small', :start_year => 1900, end_year: Time.now.year %>
 
     </div>
   </div>
+  
+  <% if session[:user_id] and @user_conect.administrator %>
   <div class="control-group">
     <%= f.label (t '.administrator'), :class => 'control-label' %>
     <div class="controls">
       <%= f.check_box :administrator, :class => 'check_box' %>
     </div>
   </div>
+  <% end %>
 
   <div class="form-actions">
     <%= f.submit (t '.submit'), :class => 'btn btn-primary' %>

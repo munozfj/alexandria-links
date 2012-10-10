@@ -23,7 +23,7 @@
           <%= yield %>
         </div>
 
-        <div class="span3">
+        <div class="span3" >
 
           <% if @cart %>
             <%= hidden_div_if(@cart.line_items.empty?, id: 'cart', class:'well sidebar-nav') do %>
