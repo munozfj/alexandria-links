@@ -59,7 +59,7 @@
   </div>
   
   <% if session[:user_id]  %>
-  <% if @user_conect.administrator %>
+  <% if  @user_conect.administrator %>
   <div class="control-group">
     <%= f.label (t '.administrator'), :class => 'control-label' %>
     <div class="controls">

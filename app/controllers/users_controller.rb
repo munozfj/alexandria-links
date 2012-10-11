@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @user_conect = User.find_by_id(session[:user_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,6 +16,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    @user_conect = User.find_by_id(session[:user_id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -37,6 +39,7 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
+    @user_conect = User.find_by_id(session[:user_id])
   end
 
   # POST /users
