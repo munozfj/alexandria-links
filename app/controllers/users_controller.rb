@@ -46,6 +46,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
+    @user_conect = User.find_by_id(session[:user_id])
 
     respond_to do |format|
       if @user.save
@@ -62,6 +63,7 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
+    @user_conect = User.find_by_id(session[:user_id])
 
     respond_to do |format|
       if @user.update_attributes(params[:user])
@@ -78,6 +80,7 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user = User.find(params[:id])
+    @user_conect = User.find_by_id(session[:user_id])
     
     begin
       @user.destroy
