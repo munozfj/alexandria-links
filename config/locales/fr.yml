@@ -237,10 +237,13 @@ fr:
     footer:
       acknowledgments: "Remerciements" ##"Acknowledgments"
       code: "Code"
+      versions: "Versions"
 
   store:
     index:
       title: "Notre Catalogue Exclusive" ##"Our Exclusive Catalog"
+      search: "Recherche" ##"Search"
+      criteria: "Saisir les mots clé" ##"Enter search criteria"
 
   books:
     index:

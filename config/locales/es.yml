@@ -219,10 +219,13 @@ es:
     footer:
       acknowledgments: "Agradecimientos"
       code: "Código"
+      versions: "Versiones"
 
   store:
     index:
       title: "Nuestro Exclusivo Catálogo"
+      search: "Buscar"
+      criteria: "Ingrese criterio de búsqueda"
 
   #Libros
   books:

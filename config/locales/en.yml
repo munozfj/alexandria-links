@@ -219,10 +219,13 @@ en:
     footer:
       acknowledgments: "Acknowledgments"
       code: "Code"
+      versions: "Versions"
 
   store:
     index:
       title: "Our Exclusive Catalog"
+      search: "Search"
+      criteria: "Enter search criteria"
 
   books:
     index:

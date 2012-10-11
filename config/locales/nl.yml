@@ -214,10 +214,13 @@ nl:
     footer:
       acknowledgments: "Dankbetuiging" ##"Acknowledgments"
       code: "Code"
+      versions: "Versies" ##"Versiones"
 
   store:
     index:
       title: "Onze Exclusive Catalog" ##"Our Exclusive Catalog"
+      search: "Zoeken" ##"Search"
+      criteria: "Voer zoekcriteria" ##"Enter search criteria"
 
   books:
     index:

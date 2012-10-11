@@ -98,12 +98,19 @@ footer ul li {
 }
 
 /* Modales */
-#modal_alex h3, #modal_acknowledgments h3
+#modal_alex , #modal_acknowledgments , #modal_versions
+{
+  color: gray;
+} 
+
+#modal_alex h3, #modal_acknowledgments h3, #modal_versions h3
 {
   font-family: 'Molle-Regular';
   font-size: 25px;
   color: #0064cd;
 } 
+
+
 
 /* Our Catalog */
 
@@ -257,3 +264,20 @@ margin: 0.5em 0;
   opacity: .8;
 }
 
+.team
+{
+  border: 3px solid gray;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 2px;
+}
+
+.texto
+{
+  text-align: justify;
+}
+
+.td_modal
+{
+  padding:2px;
+}

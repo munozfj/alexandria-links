@@ -5,7 +5,8 @@ class StoreController < ApplicationController
     if params[:set_locale]
       redirect_to store_path(:locale => params[:set_locale])
     else
-      @books = Book.search(nil)
+      #@books = Book.search(nil)
+      @books = Book.search(params[:search])
       @cart = current_cart
     end
   end
