@@ -268,7 +268,7 @@ en:
       description: "Synopsis"
       price: "Price"
       cancel: "Cancel"
-      submit: "Create Book"
+      submit: "Save"
 
   #Ordenes
   orders:

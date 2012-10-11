@@ -263,7 +263,7 @@ es:
       description: "Sinopsis"
       price: "Precio"
       cancel: "Cancelar"
-      submit: "Cargar Libro"
+      submit: "Guardar"
 
   #Ordenes
   orders:

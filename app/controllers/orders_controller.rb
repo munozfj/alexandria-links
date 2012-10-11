@@ -30,12 +30,19 @@ class OrdersController < ApplicationController
   # GET /orders/new.json
   def new
     @cart = current_cart
+
     if @cart.line_items.empty?
       redirect_to store_url, error: "Your cart is empty"
       return
     end
 
     @order = Order.new
+
+    if session[:user_id] and !User.find(session[:user_id]).administrator
+      @order.name = User.find(session[:user_id]).name
+      @order.email = User.find(session[:user_id]).email
+      @order.address = User.find(session[:user_id]).address
+    end
 
     respond_to do |format|
       format.html # new.html.erb

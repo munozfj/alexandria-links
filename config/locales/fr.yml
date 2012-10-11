@@ -280,7 +280,7 @@ fr:
       description: "Résumé" ##"Synopsis"
       price: "Prix" ##"Price"
       cancel: "Annuler" ##"Cancel"
-      submit: "Créer un livre" ##"Create Book"
+      submit: "Enregistrer" ##"Create Book"
 
   #Ordenes
   orders:

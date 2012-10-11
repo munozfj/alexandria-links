@@ -257,7 +257,7 @@ nl:
       description: "Beschrijving" ##"Synopsis"
       price: "Prijs" ##"Price"
       cancel: "Annuleren" ##"Cancel"
-      submit: "Maak Boek" ##"Create Book"
+      submit: "Sparen" ##"Create Book"
 
   #Ordenes
   orders:
