@@ -9,10 +9,12 @@
   </div>
 <% end %>
 
+<p><%= will_paginate @books %></p>
+
 <div id="store">
   <% @books.each do |book| %>
     <div class="entry">
-      <%= image_tag book.pic.url(:thumb) %>
+      <%= link_to  image_tag( book.pic.url(:thumb) ), '#' %>
       <h4><%= book.title %></h4>
      
       <%= sanitize (truncate(strip_tags(book.description),

@@ -227,6 +227,12 @@ en:
       search: "Search"
       criteria: "Enter search criteria"
 
+    show:
+      page_title: "Book Information"
+      title: "Title"
+      pic: "Picture"
+      back: "Back"
+
   books:
     index:
       page_title: "Books"

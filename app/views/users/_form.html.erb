@@ -58,13 +58,15 @@
     </div>
   </div>
   
-  <% if session[:user_id] and @user_conect.administrator %>
+  <% if session[:user_id]  %>
+  <% if @user_conect.administrator %>
   <div class="control-group">
     <%= f.label (t '.administrator'), :class => 'control-label' %>
     <div class="controls">
       <%= f.check_box :administrator, :class => 'check_box' %>
     </div>
   </div>
+  <% end %>
   <% end %>
 
   <div class="form-actions">
