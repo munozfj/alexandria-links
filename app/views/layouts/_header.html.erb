@@ -10,6 +10,21 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
 
+              <%#= Link para Login %>
+              <% if !session[:user_id] %>
+                <li>
+                  <%= link_to "Sign In", admin_path %>
+                </li>
+
+                <li>
+                  <%= link_to "Sign Up", new_user_path %>
+                </li>
+              <% else %>
+                <li>
+                  <%= link_to User.find(session[:user_id]).name , user_path(session[:user_id])%>
+                </li>
+              <% end %>
+
               <%#= Selector de Background %>
               <li>
 
@@ -23,21 +38,12 @@
                                           
                                         ]) ,
                     :onchange => 'cambio(this.value)',
-                    class: "span1", style:"width:100%" %>
+                    class: "span2 " %>
 
               </li>
  
               
-              <%#= Link para Login %>
-              <% if !session[:user_id] %>
-                <li>
-                  <%= link_to "Sign In", admin_path %>
-                </li>
-
-                <li>
-                  <%= link_to "Sign Up", new_user_path %>
-                </li>
-              <% end %>
+              
 
             </ul>
           </div>
