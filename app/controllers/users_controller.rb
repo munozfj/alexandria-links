@@ -3,8 +3,18 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    #@users = User.all
     @user_conect = User.find_by_id(session[:user_id])
+
+    if session[:user_id]
+      if ! User.find_by_id(session[:user_id]).administrator
+        @users = User.search(session[:user_id]) 
+      else
+        @users = User.search(nil) 
+      end
+    else
+      @users = User.search(nil) 
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -17,6 +27,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @user_conect = User.find_by_id(session[:user_id])
+
+    
 
     respond_to do |format|
       format.html # show.html.erb

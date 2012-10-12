@@ -22,6 +22,8 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
+  has_many :orders
+
   before_save { |user| user.email = email.downcase }
 
   default_scope :order => "name"
@@ -41,6 +43,16 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true
 
   after_destroy :ensure_an_admin_remains
+
+  def self.search(search)
+    if search
+      find(:all, 
+            :conditions => ['id = ?', "#{search}"],
+          :order => "email asc" )
+    else
+      find(:all,:order => "email asc")
+    end
+  end
 
   private
     def ensure_an_admin_remains

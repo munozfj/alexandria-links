@@ -1,11 +1,13 @@
 class OrdersController < ApplicationController
   skip_before_filter :authorize, :only => [:new, :create]
 
+  #Para pagina de Array
+  require 'will_paginate/array' 
 
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.paginate :page=>params[:page], :order=>'created_at desc' , :per_page => 10
+    @orders = Order.search(session[:user_id]).paginate :page=>params[:page], :order=>'id desc' , :per_page => 5
     @cart = current_cart
 
     respond_to do |format|
@@ -38,10 +40,13 @@ class OrdersController < ApplicationController
 
     @order = Order.new
 
-    if session[:user_id] and !User.find(session[:user_id]).administrator
-      @order.name = User.find(session[:user_id]).name
-      @order.email = User.find(session[:user_id]).email
-      @order.address = User.find(session[:user_id]).address
+    if session[:user_id] 
+      if !User.find(session[:user_id]).administrator
+        @order.name = User.find(session[:user_id]).name
+        @order.email = User.find(session[:user_id]).email
+        @order.address = User.find(session[:user_id]).address
+      end
+      @order.user_id=session[:user_id]
     end
 
     respond_to do |format|
@@ -61,6 +66,10 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(params[:order])
     @order.add_line_items_from_cart(current_cart)
+
+    if session[:user_id] 
+      @order.user_id=session[:user_id]
+    end
 
     respond_to do |format|
       if @order.save

@@ -19,8 +19,6 @@
       <th><%= t'.email' %></th>
       <th><%= t'.address' %></th>
       <th><%= t'.occupation' %></th>
-      <th><%= t'.administrator' %></th>
-      <th><%= t'.birthday' %></th>
 
 <% if session[:user_id]  %>
   <% if  @user_conect.administrator %>
@@ -37,8 +35,6 @@
         <td><%= user.email %></td>
         <td><%= user.address %></td>
         <td><%= user.occupation %></td>
-        <td><%= user.administrator %></td>
-        <td><%= user.birthday %></td>
 
 <% if session[:user_id]  %>
   <% if  @user_conect.administrator %>
