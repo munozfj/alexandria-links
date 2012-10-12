@@ -227,6 +227,15 @@ es:
       search: "Buscar"
       criteria: "Ingrese criterio de búsqueda"
 
+    show:
+      page_title: "Información del Libro"
+      title: "Título"
+      author: "Autor"
+      description: "Sinopsis"
+      price: "Precio"
+      pic: "Foto de Tapa"
+      back: "Volver"
+
   #Libros
   books:
     index:
@@ -273,6 +282,7 @@ es:
       address: "Domicilio"
       email: "E-mail"
       pay_type: "Forma de Pago"
+      created_at: "Fecha"
       actions: "Acciones"
       edit: "Modificar"
       destroy: "Eliminar"
@@ -285,9 +295,17 @@ es:
       name: "Cliente"
       address: "Domicilio"
       email: "E-mail"
+      created_at: "Fecha"
       pay_type: "Forma de Pago"
       select_type: "Elija una forma de pago"
       submit: "Cargar Orden"
+
+    show:
+      created_at: "Fecha"
+      items: "Productos"
+      qty: "Cantidad"
+      description: "Título"
+      price: "Importe"
 
   carts:
     cart:

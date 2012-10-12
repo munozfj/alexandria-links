@@ -6,11 +6,11 @@
 <dl class="dl-horizontal">
   <dt><strong><%= t '.title' %>:</strong></dt>
   <dd><%= @book.title %></dd>
-  <dt><strong>autor:</strong></dt>
+  <dt><strong><%= t '.author' %>:</strong></dt>
   <dd><%= @book.author %></dd>
-  <dt><strong>descr:</strong></dt>
+  <dt><%= t '.description' %>:</dt>
   <dd><%= @book.description %></dd>
-  <dt><strong>price:</strong></dt>
+  <dt><%= t '.price' %>:</dt>
   <dd><%=number_to_currency(@book.price)%></dd>
 
   <dt><strong><%= t '.pic'  %>:</strong></dt>
@@ -21,5 +21,5 @@
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              books_path, :class => 'btn btn-success'  %>
+              store_url, :class => 'btn btn-success'  %>
 </div>

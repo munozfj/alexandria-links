@@ -245,6 +245,15 @@ fr:
       search: "Recherche" ##"Search"
       criteria: "Saisir les mots clé" ##"Enter search criteria"
 
+    store:
+      page_title: "Informations sur le Livre" ##"Book Information"
+      title: "Titre" ##"Title"
+      author: "Auteur" ##"Author"
+      description: "Résumé" ##"Synopsis"
+      price: "Prix" ##"Price"
+      pic: "Couverture" ##"Cover"
+      back: "Retour" ##"Back"
+
   books:
     index:
       page_title: "Livres" ##"Books"
@@ -265,7 +274,7 @@ fr:
       page_title: "Modifier livre" ##"Edit Book"
 
     show:
-      page_title: "Book Information"
+      page_title: "Informations sur le Livre" ##"Book Information"
       title: "Titre" ##"Title"
       pic: "Image" ##"Picture"
       back: "Retour" ##"Back"
@@ -306,6 +315,13 @@ fr:
       pay_type: "Méthode de paiement"  ##"Payment Method"
       submit: "Créer Ordre" ##"Place Orden"
       select_type: "Choisissez une méthode de paiement" ##"Select a payment method"
+
+    show:
+      created_at: "Date"
+      items: "Articles"
+      qty: "Quantité"
+      description: "Titre"
+      price: "Prix"
 
   #Users
   users:

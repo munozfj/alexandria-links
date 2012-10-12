@@ -2,12 +2,25 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
+
+<% if session[:user_id] %>
+  <% if User.find(session[:user_id]).administrator %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_article_path,
+            :class => 'btn btn-primary btn-mini' %>
+  <% end %>
+<% end %>
+
 <table class="table table-striped">
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:subject) %></th>
+<% if session[:user_id] %>
+  <% if User.find(session[:user_id]).administrator %>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
+<% end %>
+<% end %>
     </tr>
   </thead>
   <tbody>
@@ -15,20 +28,27 @@
       <tr>
         <td><%= link_to article.id, article_path(article) %></td>
         <td><%= article.subject %></td>
+
+<% if session[:user_id] %>
+  <% if User.find(session[:user_id]).administrator %>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_article_path(article), :class => 'btn btn-mini' %>
+                      edit_article_path(article), :class => 'btn btn-mini btn-info' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       article_path(article),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-mini btn-danger' %>
         </td>
+
+<% end %>
+<% end %>
+
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_article_path,
-            :class => 'btn btn-primary' %>
+
+
+

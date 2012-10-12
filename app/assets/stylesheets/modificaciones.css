@@ -237,21 +237,55 @@ margin: 0.5em 0;
 
 */
 
-/* Fecha */
+/* Fechas */
+/* Anio */
 #user_birthday_1i
 {
   width: 65px;
 }
 
+/* Mes */
 #user_birthday_2i
 {
-  width: 100px;
+  width: 120px;
 }
 
 #user_birthday_3i
 {
   width: 50px;
 }
+
+/*Ano del articulo*/
+#article_published_at_1i
+{
+  width: 65px;
+}
+
+/*mes del articulo*/
+#article_published_at_2i
+{
+  width: 120px;
+}
+
+/*dia del articulo*/
+#article_published_at_3i
+{
+  width: 50px;
+}
+
+/*hora del articulo*/
+#article_published_at_4i
+{
+  width: 50px;
+}
+
+/*minuto del articulo*/
+#article_published_at_5i
+{
+  width: 50px;
+}
+
+/* Logueo */
 
 .hero-unit 
 {

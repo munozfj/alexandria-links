@@ -222,6 +222,15 @@ nl:
       search: "Zoeken" ##"Search"
       criteria: "Voer zoekcriteria" ##"Enter search criteria"
 
+    show:
+      page_title: "Boek Informatie" ##"Book Information"
+      title: "Titel" #"Title"
+      author: "Auteur" ##"Author"
+      description: "Beschrijving" ##"Synopsis"
+      price: "Prijs" ##"Price"
+      pic: "Beeld" ##"Cover"
+      back: "Terug" ##"Back"
+
   books:
     index:
       page_title: "Boeken" ##"Books"
@@ -283,6 +292,13 @@ nl:
       pay_type: "Betalingsmethode"  ##"Payment Method"
       submit: "Maak Bestelling" ##"Place Orden"
       select_type: "Selecteer een betaalmethode" ##"Select a payment method"
+
+    show:
+      created_at: "Datum" ##"Date"
+      items: "Artikelen" #"Items"
+      qty: "Aantal" ##"Quantity"
+      description: "Title" #"Title"
+      price: "Prijs" ##"Price"
 
 
   #Users

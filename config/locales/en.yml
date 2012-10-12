@@ -230,7 +230,10 @@ en:
     show:
       page_title: "Book Information"
       title: "Title"
-      pic: "Picture"
+      author: "Author"
+      description: "Synopsis"
+      price: "Price"
+      pic: "Cover"
       back: "Back"
 
   books:
@@ -278,6 +281,7 @@ en:
       address: "Address"
       email: "E-mail"
       pay_type: "Payment Method"
+      created_at: "Date"
       actions: "Actions"
       edit: "Edit"
       destroy: "Delete"
@@ -291,9 +295,17 @@ en:
       name: "Customer"
       address: "Address"
       email: "E-mail"
+      created_at: "Date"
       pay_type: "Payment Method"
       submit: "Place Orden"
       select_type: "Select a payment method"
+
+    show:
+      created_at: "Date"
+      items: "Items"
+      qty: "Quantity"
+      description: "Title"
+      price: "Price"
 
   #Users
   users:

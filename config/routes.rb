@@ -1,15 +1,7 @@
 AlexandriaLinks::Application.routes.draw do
 
-  #get "admin/index"
-
-  #get "sessions/new"get "store/show"
-
-  #get "sessions/create"
-
-  #get "sessions/destroy"
-
   get 'admin' => 'admin#index'
-  #match '/show',  to: 'store#show'
+  #match '/store/:id',  to: 'store#show'
 
   controller :sessions do
     get  'login' => :new
@@ -18,7 +10,7 @@ AlexandriaLinks::Application.routes.draw do
   end
 
   scope '(:locale)' do
-    resources :store
+    match '/:locale/store/:id',  to: 'store#show'
     resources :users
     resources :orders
     resources :line_items
@@ -29,7 +21,7 @@ AlexandriaLinks::Application.routes.draw do
       get :who_bought, :on => :member
     end
     root :to => 'store#index' , :as => 'store'
-#get "store/show"
+
   end
 
 end
