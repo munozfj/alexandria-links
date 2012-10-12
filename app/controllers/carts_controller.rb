@@ -1,5 +1,6 @@
 class CartsController < ApplicationController
-  skip_before_filter :authorize, :only => [:create, :update, :delete]
+  #skip_before_filter :authorize, :only => [:create, :update, :delete]
+  skip_before_filter :authorize
 
   # GET /carts
   # GET /carts.json
