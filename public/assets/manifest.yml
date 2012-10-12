@@ -1,9 +1,8 @@
 ---
-background-green.jpg: background-green-a84336313b84ecd9870f46e31ead64dc.jpg
-background-pink.jpg: background-pink-af342a00bb8df430a9e07cce5664c23e.jpg
-background-red.png: background-red-6ac4fa6d6e83961aa2ddce415aacda3c.png
-background-wood-vertical.png: background-wood-vertical-5b9bd00487e0935e45de4ae07e74b01d.png
-background-wood-vertical_original.png: background-wood-vertical_original-e4ca5a41c3633fab5ac98bbfca8cd91e.png
+background-blue.png: background-blue-7f4e9e8361cb31850990b84933ad28d8.png
+background-default.png: background-default-97df669ee1538e1fb57657207cb2289e.png
+background-pink.png: background-pink-e67730f5253e4448b79be0688a6732ef.png
+background-red.png: background-red-17ac8c12ba3bc27531e155253ef15e83.png
 favicon-114x114-precomposed.png: favicon-114x114-precomposed-c40c69e56ad8884898c21c50e1e28bc2.png
 favicon-144x144-precomposed.png: favicon-144x144-precomposed-daa8bb5fffd15a37bc19f8138380e102.png
 favicon-72x72-precomposed.png: favicon-72x72-precomposed-6f906233be40fbc7e93ea07c07e12dfd.png
@@ -11,7 +10,7 @@ favicon1.png: favicon1-781d6156eae481cb9e23b3bf5d2fccdb.png
 logo-attach.png: logo-attach-34cf06a7ac85a6719eba685a64dcb072.png
 team_fer.jpg: team_fer-eb2a67df48eddaec75c7dd67f9407327.jpg
 team_juan.jpg: team_juan-17d1fc7cacfb249d5889ca62ff5509e9.jpg
-application.js: application-16b826c85c3974f98a609d678e6dfc31.js
+application.js: application-83a5ac54b0b70d46d267e6327e755b22.js
 AlexBrush-Regular/OFL.txt: AlexBrush-Regular/OFL-08f9bba9b95bfb9efe3b17fc4babf09c.txt
 AlexBrush-Regular/alexbrush-regular.eot: AlexBrush-Regular/alexbrush-regular-2c870256a145e36c40947694c1302be7.eot
 AlexBrush-Regular/alexbrush-regular.html: AlexBrush-Regular/alexbrush-regular-d98e749afef209251c499f5142a420b8.html
@@ -23,7 +22,7 @@ Molle-Regular/molle-regular.eot: Molle-Regular/molle-regular-fe5562bad7633c34f28
 Molle-Regular/molle-regular.svg: Molle-Regular/molle-regular-036a468ed21be0ed1bdecb17447ad120.svg
 Molle-Regular/molle-regular.ttf: Molle-Regular/molle-regular-54b2f7458f351a8f74f127270287bcd0.ttf
 Molle-Regular/molle-regular.woff: Molle-Regular/molle-regular-2de45a88c9c3b8a002d33e05bd1abb22.woff
-application.css: application-1dbd70623f1b7576612868c8e3b99627.css
+application.css: application-ff5318be1c06aff83d64802513548858.css
 bootstrap_and_overrides.old: bootstrap_and_overrides-d12231f4111b493b9fde4c05dd7fd3dd.old
 modificaciones.old: modificaciones-8f79b841482b219b08ea8248887d2f45.old
 fontawesome-webfont.eot: fontawesome-webfont-7cf1b0de49e2f8672c9ad6d9e382115f.eot

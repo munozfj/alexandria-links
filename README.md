@@ -2,26 +2,30 @@
 
 Materia: 
 
-Lenguajes Scripting
+  Lenguajes Scripting
 
 Docente:
 
-Carla Ares
+  Carla Ares
 
 Año:
 
-2012
+  2012
 
 Alumnos:
 
-Juan Francisco Pose
+  Juan Francisco Pose
 
-Fernando Muñoz
+  Fernando Muñoz
 
-Projecto:
+Proyecto:
 
-Alexandria Links
+  Alexandria Links
 
 Objetivo:
 
-Se trata de una libreria virtual como trabajo final de la materia y que para nada persigue proposito comercial alguno.
+  Se trata de una libreria virtual como trabajo final de la materia y que bajo ningin motivo persigue proposito comercial alguno.
+
+Publicado en:
+  
+  https://alexandria-links.herokuapp.com

@@ -7,7 +7,7 @@ function cambio(valor)
   if(valor == "pink")
   {
     document.body.style.color="white";
-	  document.body.style.backgroundImage="url('/assets/background-pink.jpg')";
+	  document.body.style.backgroundImage="url('/assets/background-pink.png')";
   } 
   
   else if(valor == "red")
@@ -15,15 +15,15 @@ function cambio(valor)
     document.body.style.color="white";
 	  document.body.style.backgroundImage="url('/assets/background-red.png')";
   } 
-  else if(valor == "green")
+  else if(valor == "blue")
   {
-    document.body.style.color="orange";
-    document.body.style.backgroundImage="url('/assets/background-green.jpg')";
+    document.body.style.color="white";
+    document.body.style.backgroundImage="url('/assets/background-blue.png')";
   }
   else
   {
-    document.body.style.color="black";
-	  document.body.style.backgroundImage="url('/assets/background-wood-vertical.png')";
+    document.body.style.color="white";
+	  document.body.style.backgroundImage="url('/assets/background-default.png')";
   } 
   
   /*alert("Me voy con:"+sessionStorage.getItem('tipo_background'));*/

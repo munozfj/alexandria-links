@@ -61,7 +61,8 @@ http://scripts.sil.org/OFL
 /* Background */
 body
 {
-  background-image: url("/assets/background-wood-vertical.png");
+  /*background-image: url("/assets/background-wood-vertical.png");*/
+  background-color: transparent;
   color: black;
 }
 
