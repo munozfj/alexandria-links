@@ -17,12 +17,12 @@ function cambio(valor)
   } 
   else if(valor == "blue")
   {
-    document.body.style.color="white";
+    document.body.style.color="black";
     document.body.style.backgroundImage="url('/assets/background-blue.png')";
   }
   else
   {
-    document.body.style.color="white";
+    document.body.style.color="black";
 	  document.body.style.backgroundImage="url('/assets/background-default.png')";
   } 
   

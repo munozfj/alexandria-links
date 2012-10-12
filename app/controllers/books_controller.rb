@@ -1,9 +1,13 @@
 class BooksController < ApplicationController
+  
+  #Para pagina de Array
+  require 'will_paginate/array' 
+
   # GET /books
   # GET /books.json
   def index
     #@books = Book.all
-    @books = Book.search(params[:search])
+    @books = Book.search(params[:search]).paginate :page=>params[:page],    :per_page => 5
     @cart = current_cart
 
     respond_to do |format|
